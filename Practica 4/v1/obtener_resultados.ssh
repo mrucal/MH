@@ -1,0 +1,7 @@
+#!/bin/bash
+
+semilla=1111
+for (( CONTADOR=0; CONTADOR<20; CONTADOR++ )) ; do
+  ./bin/obtener_resultados $1 $semilla 
+  semilla=`expr $semilla + 1111`
+done

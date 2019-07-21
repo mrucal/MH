@@ -1,0 +1,47 @@
+Mario Ruiz Calvo, Grupo 2 
+mariorc@correo.ugr.es
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                  QAP
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Ejecutando el fichero makefile se obtienen dos ejecutables: main y obtener_resultados:
+
+main: Ejecuta la búsqueda local primer mejor, la búsqueda multiarranque básica y la busqueda local retroactiva, con una semilla fija (5555) ,
+         mostrando el costo obtenido y el tiempo. 
+
+	-modo de empleo (desde directorio practica2):
+		./bin/main data/nombre_del_fichero.dat
+
+obtener_resultado: Realiza una ejecución de un algoritmo pasado por parámetro con una semilla variable (también pasada como
+	parámetro) e imprime el coste y el tiempo de ejcución en un formato adecuado para la recogida de datos para las 20 instancias.
+
+	-modo de empleo (desde directorio practica2):
+		./bin/obtener_resultado identificador_algoritmo semilla
+		
+		identificador de algoritmo:
+			- 0: greedy 
+			- 1: búsqueda local primero mejor 
+			- 2: BMB
+			- 3: GRASP
+			- 4: ILS
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Ejecutando el script obtener_resultado.ssh se realizan 20 ejecuciones DE LAS 20 INSTANCIAS del algoritmo pasado por parámetro, 
+cada una con diferente semilla. Se imprimran los resultados en un formato adecuado para recoger los datos en tablas.
+
+	-modo de empleo (desde directorio practica2):
+		./obtener_resultados.ssh identificador_algoritmo > resultados/nombre_fichero_resultadoS
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+En la carpeta datos se almacenan los ficheros .dat con los datos para el problema del QAP de las 20 instancias
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+En la carpeta resultados se almacenan los ficheros obtenidos con el script con los resultados de los distintos algoritmos para
+las 20 instancias.
+
+

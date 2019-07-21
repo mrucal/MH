@@ -1,0 +1,49 @@
+Mario Ruiz Calvo, Grupo 2 
+mariorc@correo.ugr.es
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+                  QAP
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Ejecutando el fichero makefile se obtienen dos ejecutables: main y obtener_resultados:
+
+main: Ejecuta los cuatro algoritmos (greedy, búsqueda local, enfriamiento simulado y búsqueda tabú) con una semilla fija (5555)
+	y para cada uno de ellos imprime el coste obtenido y el tiempo de ejecución del algoritmo.
+
+	-modo de empleo (desde directorio software):
+		./bin/main data/nombre_del_fichero.dat
+
+obtener_resultado: Realiza una ejecución de un algoritmo pasado por parámetro con una semilla variable (también pasada como
+	parámetro) e imprime el coste y el tiempo de ejcución en un formato adecuado para la recogida de datos.
+
+	-modo de empleo (desde directorio software):
+		./bin/obtener_resultado data/nombre_del_fichero.dat identificador_algoritmo semilla
+		
+		identificador de algoritmo:
+			- 0: greedy
+			- 1: búsqueda local primero mejor
+			- 2: enfriamiento simulado
+			- 3: búsqueda tabú
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Ejecutando el script obtener_resultado.ssh se realizan 20 ejecuciones del algoritmo pasado por parámetro, cada una con diferente 
+semilla. Se imprimran los resultados en un formato adecuado para recoger los datos en tablas.
+
+	-modo de empleo (desde directorio software):
+		./obtener_resultados.ssh data/nombre_del_fichero.dat identificador_algoritmo > resultados/nombre_fichero_resultado
+
+El script obtener_resultados2.ssh realiza las 20 ejecuciones de los 4 algoritmos.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+En la carpeta datos se almacenan los ficheros .dat con los datos para el problema del QAP de las 20 instancias
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+En la carpeta resultados se almacenan los ficheros obtenidos con el script con los resultados de los distintos algoritmos para
+las 20 instancias.
+
+

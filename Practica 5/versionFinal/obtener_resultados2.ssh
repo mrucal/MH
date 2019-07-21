@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for i in $(find . -type f -iname "*.dat" |sort) 
+do
+  
+    ./bin/obtener_resultados2 $1 $2 $i
+    echo $i
+done
